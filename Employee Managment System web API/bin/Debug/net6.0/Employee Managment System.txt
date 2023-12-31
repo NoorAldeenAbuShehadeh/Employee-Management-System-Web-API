@@ -1,0 +1,866 @@
+2023-12-24 11:28:14,932 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 11:28:14,971 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 11:28:14,992 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:28:14,997 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Production
+2023-12-24 11:28:15,002 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:28:47,657 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:28:47,719 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 11:28:47,726 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:30:18,765 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:30:18,790 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 11:30:18,793 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:32:54,450 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 11:35:54,714 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:35:54,786 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 11:35:54,796 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:36:37,437 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 11:39:41,434 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:39:41,482 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 11:39:41,492 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:41:10,155 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 11:44:43,600 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:44:43,634 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 11:44:43,638 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:45:21,086 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 11:46:32,493 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:46:32,535 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 11:46:32,538 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:48:31,442 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 11:48:31,475 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 11:48:31,493 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:48:31,497 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Production
+2023-12-24 11:48:31,502 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:49:23,546 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 11:49:23,587 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 11:49:23,618 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:49:23,621 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Production
+2023-12-24 11:49:23,625 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:50:43,061 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 11:50:43,099 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 11:50:43,111 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:50:43,114 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Production
+2023-12-24 11:50:43,117 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:51:53,448 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:51:53,529 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 11:51:53,532 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:52:21,807 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 11:55:23,041 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 11:55:23,111 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 11:55:23,119 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 11:56:13,026 [.NET ThreadPool Worker] ERROR Employee_Management_System.DAL.DUsers - User with email user@example.com not found.
+2023-12-24 11:56:49,822 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 11:57:44,998 [.NET ThreadPool Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: JWT key size is not sufficient. It should be at least 256 bits.
+   at Employee_Managment_System_web_API.Controllers.LoginController.GenerateToken(UserDTO user) in C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\Controllers\LoginController.cs:line 47
+   at Employee_Managment_System_web_API.Controllers.LoginController.Login(UserLogin userLogin) in C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\Controllers\LoginController.cs:line 37
+   at lambda_method8(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-24 12:00:18,397 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 12:00:18,437 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 12:00:18,441 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 12:00:48,237 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 12:10:08,927 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 12:10:08,966 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 12:10:08,970 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 12:10:47,761 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 12:12:17,924 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 12:12:17,992 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 12:12:18,002 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 12:12:48,990 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 12:15:44,482 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 12:15:44,515 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 12:15:44,519 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 12:16:07,632 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 12:18:19,631 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 12:18:19,652 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 12:18:19,655 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 12:18:46,277 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 12:21:24,620 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 12:21:24,658 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 12:21:24,663 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 12:21:59,255 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 12:27:56,141 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 12:28:41,193 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 12:28:41,249 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 12:28:41,280 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 12:28:41,287 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Production
+2023-12-24 12:28:41,293 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 12:29:58,864 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 12:30:53,142 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 12:30:53,253 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 12:30:53,371 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 12:30:53,374 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 12:30:53,378 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 12:31:34,775 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 12:31:40,055 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 14:28:47,345 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 14:28:47,357 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 14:28:47,362 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 14:28:47,364 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 14:28:47,365 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 14:29:10,313 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 14:29:42,468 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 14:29:42,481 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 14:29:42,486 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 14:29:42,487 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Production
+2023-12-24 14:29:42,489 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 14:29:54,906 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 14:30:15,313 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 14:30:15,326 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 14:30:15,333 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 14:30:15,335 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 14:30:15,336 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 14:30:25,024 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 14:33:03,756 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 14:33:03,768 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 14:33:03,773 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 14:33:03,775 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 14:33:03,776 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 14:33:21,086 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 14:33:46,148 [.NET ThreadPool Worker] ERROR Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com try to logg in but enter wrong password.
+2023-12-24 16:49:23,803 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 16:49:23,827 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 16:49:23,841 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 16:49:23,844 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 16:49:23,852 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 16:50:28,009 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 16:53:06,246 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 16:53:06,269 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 16:53:06,281 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 16:53:06,285 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 16:53:06,288 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 16:53:44,107 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 17:05:41,960 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 17:06:31,822 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 17:06:31,852 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 17:06:31,871 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 17:06:31,876 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 17:06:31,880 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 17:07:27,775 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 17:08:09,137 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 17:08:09,168 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 17:08:09,180 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 17:08:09,183 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 17:08:09,185 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 17:08:39,402 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 17:11:14,819 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 17:11:14,840 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 17:11:14,851 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 17:11:14,853 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 17:11:14,855 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 17:11:39,176 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 17:16:58,876 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 17:16:58,895 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 17:16:58,907 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 17:16:58,911 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 17:16:58,915 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 17:17:24,155 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-24 17:41:05,251 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-24 17:41:05,305 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-24 17:41:05,336 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-24 17:41:05,342 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-24 17:41:05,348 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-24 17:41:26,253 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 09:49:55,331 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 09:49:55,369 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 09:49:55,386 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 09:49:55,392 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 09:49:55,402 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 09:50:22,266 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 09:52:59,422 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 09:52:59,459 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 09:52:59,477 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 09:52:59,481 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 09:52:59,486 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 09:53:14,112 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 09:54:24,054 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 09:54:24,100 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 09:54:24,122 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 09:54:24,127 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 09:54:24,131 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 09:54:43,900 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 09:55:36,733 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 09:55:36,768 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 09:55:36,786 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 09:55:36,791 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 09:55:36,795 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 09:57:35,256 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 09:59:52,709 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 09:59:52,768 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 09:59:52,797 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 09:59:52,804 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 09:59:52,810 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:00:18,858 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:02:21,969 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:02:21,994 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:02:22,005 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:02:22,008 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:02:22,011 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:02:42,908 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:03:16,403 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:03:16,424 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:03:16,435 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:03:16,437 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:03:16,439 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:03:30,345 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:05:41,949 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:05:41,982 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:05:42,001 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:05:42,006 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:05:42,011 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:08:01,169 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:08:01,213 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:08:01,237 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:08:01,243 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:08:01,249 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:08:14,163 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:24:57,448 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:24:57,474 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:24:57,486 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:24:57,490 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:24:57,493 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:25:08,626 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:30:37,497 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:30:37,586 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:30:37,596 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:31:29,994 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:41:30,460 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:41:30,487 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:41:30,491 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:42:52,431 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:42:52,453 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:42:52,471 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:42:52,474 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:42:52,477 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:46:05,728 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:46:05,749 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:46:05,762 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:46:05,765 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:46:05,768 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:46:45,847 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:47:54,348 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:47:54,366 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:47:54,378 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:47:54,381 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:47:54,383 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:48:15,529 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:48:15,582 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:48:15,594 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:48:15,598 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:48:15,603 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:50:36,753 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:50:36,804 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:50:36,826 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:50:36,833 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:50:36,839 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:51:20,543 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:53:06,099 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:53:06,121 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:53:06,135 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:53:06,138 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:53:06,141 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:53:24,972 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:55:59,393 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:55:59,456 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:55:59,481 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:55:59,488 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:55:59,496 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:56:19,107 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 10:57:28,114 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 10:57:28,165 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 10:57:28,188 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 10:57:28,193 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 10:57:28,198 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 10:57:49,396 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 11:08:01,353 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 11:08:01,374 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 11:08:01,387 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 11:08:01,391 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 11:08:01,395 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 11:08:16,799 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 11:10:09,151 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 11:10:09,193 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 11:10:09,209 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 11:10:09,213 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 11:10:09,216 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 11:11:10,018 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 11:12:23,697 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 11:12:23,725 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 11:12:23,737 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 11:12:23,740 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 11:12:23,743 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 11:12:35,964 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 11:14:14,833 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 11:14:14,846 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 11:14:14,851 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 11:14:14,853 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 11:14:14,854 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 11:14:30,134 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 11:24:53,401 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 11:24:53,412 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 11:24:53,418 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 11:24:53,419 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 11:24:53,421 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 11:25:01,683 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 11:28:25,328 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 11:28:25,346 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 11:28:25,353 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 11:28:25,354 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 11:28:25,355 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 11:28:33,432 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 11:30:49,234 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 11:30:49,251 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 11:30:49,260 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 11:30:49,262 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 11:30:49,264 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 11:34:19,066 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 11:34:19,078 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 11:34:19,085 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 11:34:19,087 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 11:34:19,088 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 11:34:26,150 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 11:35:19,613 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 11:35:19,625 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 11:35:19,631 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 11:35:19,632 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 11:35:19,633 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 12:03:55,061 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 12:03:55,073 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 12:03:55,078 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 12:03:55,080 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 12:03:55,081 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 12:04:21,524 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 12:04:29,033 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 12:13:21,263 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 12:13:21,275 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 12:13:21,281 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 12:13:21,282 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 12:13:21,283 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 12:13:31,584 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 13:48:08,787 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 13:48:08,799 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 13:48:08,804 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 13:48:08,806 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 13:48:08,807 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 13:48:17,920 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 13:49:47,670 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 13:49:47,682 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 13:49:47,688 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 13:49:47,690 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 13:49:47,691 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:01:19,189 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:01:19,201 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:01:19,206 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:01:19,208 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:01:19,209 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:01:36,024 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 14:02:10,363 [.NET ThreadPool Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10206: Unable to validate audience. The 'audiences' parameter is empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Employee_Managment_System_web_API.Controllers.LoginController.GetCurrentUser(String token)
+   at Employee_Managment_System_web_API.Controllers.LoginController.AdminEndPoint()
+   at lambda_method52(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-25 14:02:21,276 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:02:21,288 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:02:21,294 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:02:21,295 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:02:21,296 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:02:58,363 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:02:58,375 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:02:58,381 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:02:58,382 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:02:58,384 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:04:02,262 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:04:02,274 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:04:02,280 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:04:02,281 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:04:02,282 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:04:11,824 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 14:08:46,797 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:08:46,808 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:08:46,814 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:08:46,815 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:08:46,817 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:08:57,480 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 14:12:23,924 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:12:23,937 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:12:23,943 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:12:23,945 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:12:23,947 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:13:39,306 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 14:40:53,697 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:40:53,709 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:40:53,715 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:40:53,716 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:40:53,717 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:41:05,328 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 14:45:57,418 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:45:57,430 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:45:57,436 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:45:57,437 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:45:57,438 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:49:02,407 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:49:02,419 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:49:02,428 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:49:02,429 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:49:02,430 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 14:59:16,486 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 14:59:16,497 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 14:59:16,503 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 14:59:16,505 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 14:59:16,506 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 15:00:23,111 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-25 15:01:04,275 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email momen@gmail.com logged in.
+2023-12-25 15:01:41,169 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email momen@gmail.com logged in.
+2023-12-25 15:34:11,542 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 15:34:11,554 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 15:34:11,560 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 15:34:11,561 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 15:34:11,562 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 15:34:47,474 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email momen@gmail.com logged in.
+2023-12-25 16:41:41,419 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 16:41:41,431 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 16:41:41,438 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 16:41:41,439 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 16:41:41,441 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-25 16:59:44,568 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-25 16:59:44,582 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-25 16:59:44,588 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-25 16:59:44,590 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-25 16:59:44,591 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 11:26:51,754 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 11:26:51,776 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 11:26:51,788 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 11:26:51,791 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 11:26:51,795 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 11:33:48,749 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 11:33:48,786 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 11:33:48,797 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 11:33:48,799 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 11:33:48,802 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 11:35:38,766 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 11:35:38,785 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 11:35:38,796 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 11:35:38,798 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 11:35:38,800 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 11:40:21,201 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 11:40:21,218 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 11:40:21,228 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 11:40:21,231 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 11:40:21,233 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 11:51:39,123 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-26 11:52:06,904 [.NET ThreadPool Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A suitable constructor for type 'Employee_Managment_System_web_API.Controllers.DepartmentController' could not be located. Ensure the type is concrete and all parameters of a public constructor are either registered as services or passed as arguments. Also ensure no extraneous arguments are provided.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-26 11:53:42,665 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 11:53:42,676 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 11:53:42,682 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 11:53:42,684 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 11:53:42,685 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 11:53:51,256 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - Added new Department: Technical Support
+2023-12-26 12:31:04,792 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-26 12:31:17,369 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - Added new user: mohammad@gmail.com
+2023-12-26 12:31:17,412 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - Added new Employee: mohammad@gmail.com
+2023-12-26 12:31:17,432 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - Added salary for employee: mohammad@gmail.com
+2023-12-26 12:33:03,846 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 12:33:03,858 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 12:33:03,864 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 12:33:03,865 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 12:33:03,866 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 12:33:09,480 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - Added new user: mohammad@gmail.com
+2023-12-26 12:33:09,530 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - Added new Employee: mohammad@gmail.com
+2023-12-26 12:33:09,551 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - Added salary for employee: mohammad@gmail.com
+2023-12-26 12:38:23,648 [.NET ThreadPool Worker] ERROR Employee_Management_System.DAL.DUsers - Error while add new user: The instance of entity type 'User' cannot be tracked because another instance with the same key value for {'Email'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2023-12-26 12:38:40,191 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 12:38:40,203 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 12:38:40,209 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 12:38:40,210 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 12:38:40,212 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 12:39:07,722 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - Added new user: mohammad@gmail.com
+2023-12-26 12:39:07,766 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - Added new Employee: mohammad@gmail.com
+2023-12-26 12:39:07,786 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - Added salary for employee: mohammad@gmail.com
+2023-12-26 12:39:09,111 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - Department with Name Technical Support updated.
+2023-12-26 12:43:21,705 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 12:43:21,717 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 12:43:21,722 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 12:43:21,723 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 12:43:21,725 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 12:44:06,067 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - retrived all departments
+2023-12-26 14:41:04,710 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 14:41:04,722 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 14:41:04,727 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 14:41:04,728 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 14:41:04,730 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 14:43:17,217 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 14:43:17,228 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 14:43:17,234 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 14:43:17,235 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 14:43:17,236 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 14:43:32,993 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-26 14:44:22,441 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 14:44:22,455 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 14:44:22,462 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 14:44:22,463 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 14:44:22,465 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 14:44:41,054 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - retrived all departments
+2023-12-26 14:45:20,843 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 14:45:20,855 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 14:45:20,860 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 14:45:20,862 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 14:45:20,863 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 14:45:26,750 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - retrived all departments
+2023-12-26 14:47:14,206 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 14:47:14,222 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 14:47:14,230 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 14:47:14,232 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 14:47:14,233 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 14:47:20,019 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - retrived all departments
+2023-12-26 14:48:09,351 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-26 15:12:17,240 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-26 15:12:29,252 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - retrived all departments
+2023-12-26 15:24:35,771 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 15:24:35,795 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 15:24:35,809 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 15:24:35,812 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 15:24:35,815 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 15:24:37,708 [.NET ThreadPool Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'string' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.ParameterPolicyFactory.Create(RoutePatternParameterPart parameter, RoutePatternParameterPolicyReference reference)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-26 15:24:39,017 [.NET ThreadPool Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'string' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.ParameterPolicyFactory.Create(RoutePatternParameterPart parameter, RoutePatternParameterPolicyReference reference)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-26 15:25:52,012 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 15:25:52,041 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 15:25:52,068 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 15:25:52,079 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 15:25:52,089 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 15:28:04,816 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-26 15:28:18,957 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - retrived all employees
+2023-12-26 15:28:58,564 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - retrived all employees
+2023-12-26 15:29:38,800 [.NET ThreadPool Worker] ERROR Employee_Management_System.DAL.DUsers - User with email s11924574@stu.najah.edu try to logg in but enter wrong password.
+2023-12-26 15:29:44,025 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email s11924574@stu.najah.edu logged in.
+2023-12-26 15:31:11,732 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 15:31:11,801 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 15:31:11,830 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 15:31:11,837 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 15:31:11,845 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 15:31:45,287 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 15:31:45,352 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 15:31:45,380 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 15:31:45,387 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 15:31:45,394 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 15:32:34,998 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email s11923513@stu.najah.edu logged in.
+2023-12-26 15:32:47,141 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - retrived all employees
+2023-12-26 15:33:07,349 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email momen@gmail.com logged in.
+2023-12-26 15:33:19,315 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - retrived all employees
+2023-12-26 15:33:25,349 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - retrived all employees
+2023-12-26 15:33:45,296 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 15:33:45,317 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 15:33:45,328 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 15:33:45,331 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 15:33:45,333 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 15:34:06,608 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - Get data for employee
+2023-12-26 16:12:37,792 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 16:12:37,938 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 16:12:37,978 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 16:12:37,983 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 16:12:37,987 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 16:13:14,067 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-26 16:13:35,453 [.NET ThreadPool Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A suitable constructor for type 'Employee_Managment_System_web_API.Controllers.SalaryController' could not be located. Ensure the type is concrete and all parameters of a public constructor are either registered as services or passed as arguments. Also ensure no extraneous arguments are provided.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Employee_Managment_System_web_API.Middleware.UserMiddleware.InvokeAsync(HttpContext context) in C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\Middleware\UserMiddleware.cs:line 23
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-26 16:16:21,240 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 16:16:21,274 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 16:16:21,291 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 16:16:21,295 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 16:16:21,299 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 16:16:38,702 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - retrived all salaries
+2023-12-26 16:22:15,477 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 16:22:15,497 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 16:22:15,511 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 16:22:15,514 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 16:22:15,517 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 16:22:30,830 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - retrived all salaries
+2023-12-26 16:32:05,104 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-26 16:32:17,127 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - retrived all salaries
+2023-12-26 16:36:27,264 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 16:36:27,290 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 16:36:27,304 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 16:36:27,307 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 16:36:27,310 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 16:37:37,579 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - salary with employee email s11923513@stu.najah.edu returned.
+2023-12-26 16:37:54,218 [.NET ThreadPool Worker] ERROR Employee_Management_System.DAL.DSalary - salary with employee email s11923513@stu.najah.e not found.
+2023-12-26 16:38:55,785 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-26 16:38:55,864 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-26 16:38:55,902 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-26 16:38:55,909 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-26 16:38:55,917 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-26 16:39:13,526 [.NET ThreadPool Worker] ERROR Employee_Management_System.DAL.DSalary - salary with employee email s11923513@stu.najah.e not found.
+2023-12-27 10:31:18,022 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-27 10:31:18,057 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-27 10:31:18,077 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-27 10:31:18,082 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-27 10:31:18,087 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-27 10:33:36,397 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-27 10:33:36,419 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-27 10:33:36,431 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-27 10:33:36,434 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-27 10:33:36,437 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-27 10:34:58,395 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-27 10:34:58,442 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-27 10:34:58,466 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-27 10:34:58,472 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-27 10:34:58,478 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-27 10:35:25,509 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - User with email anooraldeen9@gmail.com logged in.
+2023-12-27 10:35:48,380 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DLeave - retrived approved leaves
+2023-12-27 10:43:11,205 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-27 10:43:11,260 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-27 10:43:11,286 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-27 10:43:11,293 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-27 10:43:11,299 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-27 10:43:25,287 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DLeave - Retrieved all leaves
+2023-12-28 14:32:23,322 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 14:32:23,334 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 14:32:23,341 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 14:32:23,343 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 14:32:23,344 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 14:32:41,866 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [LogIn] - User with email anooraldeen9@gmail.com logged in.
+2023-12-28 14:37:10,797 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 14:37:10,810 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 14:37:10,815 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 14:37:10,817 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 14:37:10,818 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 14:37:23,341 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [LogIn] - User with email anooraldeen9@gmail.com logged in.
+2023-12-28 17:40:35,095 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 17:40:35,107 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 17:40:35,113 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 17:40:35,114 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 17:40:35,115 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 17:41:21,759 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [LogIn] - User with email s11924574@stu.najah.edu logged in.
+2023-12-28 17:42:37,514 [.NET ThreadPool Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Employee_Management_System.Services.IAttendanceServices' while attempting to activate 'Employee_Managment_System_web_API.Controllers.AttendanceController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method65(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Employee_Managment_System_web_API.Middleware.UserMiddleware.InvokeAsync(HttpContext context) in C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\Middleware\UserMiddleware.cs:line 23
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-28 17:45:09,202 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 17:45:09,213 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 17:45:09,219 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 17:45:09,221 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 17:45:09,222 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 17:45:19,845 [.NET ThreadPool Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Employee_Management_System.Services.IAttendanceServices' while attempting to activate 'Employee_Managment_System_web_API.Controllers.AttendanceController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method15(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Employee_Managment_System_web_API.Middleware.UserMiddleware.InvokeAsync(HttpContext context) in C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\Middleware\UserMiddleware.cs:line 23
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-28 17:46:38,637 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 17:46:38,653 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 17:46:38,659 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 17:46:38,661 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 17:46:38,662 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 19:05:52,150 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 19:05:52,165 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 19:05:52,172 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 19:05:52,175 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 19:05:52,177 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 19:10:28,336 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 19:10:28,347 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 19:10:28,353 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 19:10:28,354 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 19:10:28,355 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 19:14:08,387 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 19:14:08,401 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 19:14:08,407 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 19:14:08,409 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 19:14:08,410 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 19:30:54,930 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 19:30:54,941 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 19:30:54,947 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 19:30:54,949 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 19:30:54,950 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 19:32:25,939 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 19:32:25,950 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 19:32:25,957 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 19:32:25,958 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 19:32:25,959 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 19:32:31,008 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DAttendance - Added new Attendance for: s11924574@stu.najah.edu
+2023-12-28 19:33:15,417 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 19:33:15,429 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 19:33:15,435 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 19:33:15,437 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 19:33:15,438 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 19:33:43,937 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-28 19:33:43,949 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-28 19:33:43,955 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-28 19:33:43,956 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-28 19:33:43,957 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-28 19:33:54,329 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DAttendance - Added new Attendance for: s11924574@stu.najah.edu
+2023-12-31 15:21:44,461 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-31 15:21:44,474 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-31 15:21:44,481 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-31 15:21:44,483 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-31 15:21:44,484 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-31 15:21:52,275 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [LogIn] - User with email s11924574@stu.najah.edu logged in.
+2023-12-31 15:25:33,869 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-31 15:25:33,883 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-31 15:25:33,889 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-31 15:25:33,890 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-31 15:25:33,892 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-31 15:26:07,563 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [LogIn] - User with email anooraldeen9@gmail.com logged in.
+2023-12-31 15:26:22,241 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [AddUser] - Added new user: saleh@gmail.com
+2023-12-31 15:26:22,283 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - [DEmployees] - [AddEmployee] - Added new Employee: saleh@gmail.com
+2023-12-31 15:26:22,301 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - [DSalary] - [AddSalary] - Added salary for employee: saleh@gmail.com
+2023-12-31 15:39:38,677 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2023-12-31 15:39:38,690 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2023-12-31 15:39:38,697 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-12-31 15:39:38,699 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-12-31 15:39:38,700 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2023-12-31 15:39:48,831 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - [DDepartments] - [AddDepartment] - Added new Department: Finance
+2023-12-31 15:40:41,536 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [AddUser] - Added new user: rami@gmail.com
+2023-12-31 15:40:41,565 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - [DEmployees] - [AddEmployee] - Added new Employee: rami@gmail.com
+2023-12-31 15:40:41,586 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - [DSalary] - [AddSalary] - Added salary for employee: rami@gmail.com
+2023-12-31 15:40:42,195 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - [DDepartments] - [UpdateDepartment] - Department with Name Technical Support updated.
+2023-12-31 15:41:03,375 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - [DDepartments] - [GetDepartments] - Retrived all departments
+2023-12-31 15:42:48,486 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DDepartments - [DDepartments] - [GetDepartments] - Retrived all departments
+2023-12-31 15:43:19,206 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - [DEmployees] - [GetEmployees] - Retrived all employees in department
+2023-12-31 15:43:45,067 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - [DSalary] - [GetSalaries] - Retrived all salaries
+2023-12-31 15:44:09,554 [.NET ThreadPool Worker] ERROR Employee_Management_System.DAL.DSalary - salary with employee email s11923513@stu.najah.e not found.
+2023-12-31 15:44:28,808 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DSalary - [DSalary] - [GetSalary] - Salary with employee email s11923513@stu.najah.edu returned.
+2023-12-31 15:44:53,782 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DLeave - [DLeave] - [GetLeaves] - Retrieved all leaves
+2023-12-31 15:45:37,976 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DLeave - [DLeave] - [GetLeaves] - Retrieved all leaves
+2023-12-31 16:17:53,213 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [LogIn] - User with email NAbuShehadeh@gmail.com logged in.
+2023-12-31 16:20:52,954 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DLeave - [DLeave] - [AddLeave] - Added new Leave to employee: NAbuShehadeh@gmail.com
+2023-12-31 16:22:24,677 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DAttendance - Added new Attendance for: NAbuShehadeh@gmail.com
+2023-12-31 16:23:23,219 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DLeave - [DLeave] - [GetLeaves] - Retrieved all leaves

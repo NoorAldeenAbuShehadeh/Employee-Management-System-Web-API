@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employee Management System web API", "Employee Managment System web API\Employee Management System web API.csproj", "{AFB9081E-DD3D-4673-936E-0252F1B017F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFB9081E-DD3D-4673-936E-0252F1B017F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB9081E-DD3D-4673-936E-0252F1B017F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB9081E-DD3D-4673-936E-0252F1B017F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB9081E-DD3D-4673-936E-0252F1B017F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95059D62-9DF1-4C0A-91E8-6F7CAF014A9C}
+	EndGlobalSection
+EndGlobal
