@@ -1,6 +1,5 @@
 ﻿using Employee_Management_System.DAL;
 using Employee_Management_System.Model;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Employee_Management_System.Services
 {
@@ -33,28 +32,46 @@ namespace Employee_Management_System.Services
                 throw ex;
             }
         }
-        public async Task<Salary> GetEmployeeSalaryDetails(string employeeEmail)
+        public async Task<Salary> GetEmployeeSalaryDetails(User user, string? employeeEmail)
         {
             try
             {
-                var result = await _dsalary.GetSalary(employeeEmail);
-                return result;
-            }
-            catch(Exception ex)
-            {
-                _logger.LogError($"[{nameof(SalaryServices)}] - [{nameof(GetEmployeeSalaryDetails)}] - Error while get salary details:for employee {ex}");
-                throw ex;
-            }
-        }
-        public async Task<List<Employee>> FilterEmployeesBySalary()
-        {
-            try
-            {
-                return await _dEmployees.FilterEmployeesBySalary(1000);
+                if(user.Role=="admin"&&employeeEmail!=null)
+                {
+                    var result = await _dsalary.GetSalary(employeeEmail);
+                    return result;
+                }
+                else
+                {
+                    var result = await _dsalary.GetSalary(user.Email);
+                    return result;
+                }
             }
             catch (Exception ex)
             {
-                _logger.LogError($"[{nameof(SalaryServices)}] - [{nameof(FilterEmployeesBySalary)}] - Error while get employees that have salary > 1000: {ex}");
+                _logger.LogError($"[{nameof(SalaryServices)}] - [{nameof(GetEmployeeSalaryDetails)}] - Error while get salary details for employee {ex}");
+                throw ex;
+            }
+        }
+        public async Task<bool> UpdateSalary(Salary salary)
+        {
+            try
+            {
+                Salary s = await _dsalary.GetSalary(salary.EmployeeEmail);
+                if(s !=null)
+                {
+                    bool salaryUpdated = await _dsalary.UpdateSalary(salary);
+                    if (salaryUpdated)
+                    {
+                        return true;
+                    }
+                    return false;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"[{nameof(SalaryServices)}] - [{nameof(UpdateSalary)}] - Error while update salary details for employee {ex}");
                 throw ex;
             }
         }
