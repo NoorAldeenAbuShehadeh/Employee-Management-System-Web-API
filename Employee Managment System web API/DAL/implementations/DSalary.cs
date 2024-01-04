@@ -1,5 +1,4 @@
 ﻿using Employee_Management_System.Model;
-using Microsoft.Extensions.Logging;
 using System.ComponentModel.DataAnnotations;
 
 namespace Employee_Management_System.DAL
@@ -50,7 +49,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public bool UpdateSalary(Salary salary)
+        public async Task<bool> UpdateSalary(Salary salary)
         {
             try
             {
@@ -96,12 +95,12 @@ namespace Employee_Management_System.DAL
                 }
                 else
                 {
-                    Salary salary = new Salary() 
+                    Salary salary = new Salary()
                     {
-                        EmployeeEmail=salaryDTO.EmployeeEmail,
-                        Amount=salaryDTO.Amount,
-                        Bonuses=salaryDTO.Bonuses,
-                        Deductions=salaryDTO.Deductions
+                        EmployeeEmail = salaryDTO.EmployeeEmail,
+                        Amount = salaryDTO.Amount,
+                        Bonuses = salaryDTO.Bonuses,
+                        Deductions = salaryDTO.Deductions
                     };
                     _logger.LogInformation($"[{nameof(DSalary)}] - [{nameof(GetSalary)}] - Salary with employee email {employeeEmail} returned.");
                     return salary;

@@ -70,7 +70,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public bool UpdateDepartment(Department department)
+        public async Task<bool> UpdateDepartment(Department department)
         {
             try
             {
@@ -94,7 +94,6 @@ namespace Employee_Management_System.DAL
                     {
                         ValidateDepartment(department);
                         departmentDTO.ManagerEmail = department.ManagerEmail;
-                        _context.SaveChanges();
                         _logger.LogInformation($"[{nameof(DDepartments)}] - [{nameof(UpdateDepartment)}] - Department with Name {department?.Name} updated.");
                         return true;
                     }
@@ -111,7 +110,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public List<KeyValuePair<string, int>>? DepartmentsStatistics()
+        public async Task<List<Dictionary<string, string>>>? DepartmentsStatistics()
         {
             try
             {
@@ -119,8 +118,11 @@ namespace Employee_Management_System.DAL
                                        join department in _context.Departments
                                        on emp.DepartmentName equals department.Name
                                        group emp by department.Name into DG
-                                       select new KeyValuePair<string, int>
-                                       (DG.Key,DG.Count())
+                                       select new Dictionary<string, string>
+                                       {
+                                          { "departmentName", DG.Key },
+                                          { "numberOfEmployees", DG.Count().ToString() }
+                                       }
                                        ).ToList();
                 _logger.LogInformation($"[{nameof(DDepartments)}] - [{nameof(DepartmentsStatistics)}] - Retrived departments statistics");
                 return departmentsInfo;

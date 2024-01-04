@@ -1,5 +1,4 @@
-﻿using Employee_Management_System.DAL;
-using Employee_Management_System.Model;
+﻿using Employee_Management_System.Model;
 using Employee_Management_System.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,27 +10,64 @@ namespace Employee_Managment_System_web_API.Controllers
     public class SalaryController : ControllerBase
     {
         private ISalaryServices _salaryServices;
-        public SalaryController(ISalaryServices salaryServices)
+        private ILogger<SalaryController> _logger;
+        public SalaryController(ISalaryServices salaryServices, ILogger<SalaryController> logger)
         {
             _salaryServices = salaryServices;
+            _logger = logger;
         }
 
         [HttpGet]
-        [Authorize(Roles ="admin")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<List<Dictionary<string, string>>>> GetEmployeeSalaries()
         {
-            var result = await _salaryServices.GetEmployeeSalaries();
-            if (result == null) return NotFound();
-            return Ok(result);
+            try
+            {
+                var result = await _salaryServices.GetEmployeeSalaries();
+                if (result == null) return NotFound();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"[{nameof(SalaryController)}] - [{nameof(GetEmployeeSalaries)}] - Error: {ex}");
+                throw ex;
+            }
         }
 
-        [HttpGet("{EmployeeEmail}")]
-        [Authorize(Roles = "admin")]
-        public async Task<ActionResult<Salary>> GetEmployeeSalaryDetails(string employeeEmail)
+        [HttpGet("GetEmployeeSalaryDetails")]
+        [Authorize]
+        public async Task<ActionResult<Salary>> GetEmployeeSalaryDetails([FromQuery] string? employeeEmail)
         {
-            var result = await _salaryServices.GetEmployeeSalaryDetails(employeeEmail);
-            if (result == null) return NotFound();
-            return Ok(result);
+            try
+            {
+                var user = HttpContext.Items["User"] as User;
+                var result = await _salaryServices.GetEmployeeSalaryDetails(user, employeeEmail);
+                if (result == null) return NotFound();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"[{nameof(SalaryController)}] - [{nameof(GetEmployeeSalaryDetails)}] - Error: {ex}");
+                throw ex;
+            }
+        }
+
+        [HttpPut]
+        [Authorize(Roles = "admin")]
+        public async Task<ActionResult> UpdateSalary([FromBody] Salary salary)
+        {
+            try
+            {
+                if (salary == null) return BadRequest();
+                bool salaryUpdated = await _salaryServices.UpdateSalary(salary);
+                if (salaryUpdated) return Ok("updated successfully");
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"[{nameof(SalaryController)}] - [{nameof(UpdateSalary)}] - Error: {ex}");
+                throw ex;
+            }
         }
     }
 }

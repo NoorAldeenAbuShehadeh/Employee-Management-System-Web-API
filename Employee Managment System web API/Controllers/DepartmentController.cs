@@ -10,51 +10,85 @@ namespace Employee_Managment_System_web_API.Controllers
     public class DepartmentController : ControllerBase
     {
         private IDepartmentServices _departmentServices;
-        public DepartmentController(IDepartmentServices departmentServices)
+        private ILogger<DepartmentController> _logger;
+        public DepartmentController(IDepartmentServices departmentServices, ILogger<DepartmentController> logger)
         {
             _departmentServices = departmentServices;
+            _logger = logger;
         }
 
         [HttpPost]
         [Authorize(Roles = "admin")]
         public async Task<ActionResult> AddDepartment([FromBody] Department department)
         {
-            department.ManagerEmail = null;
-            if (await _departmentServices.AddDepartment(department))
+            try
             {
-                return StatusCode(201, new { Message = "department created successfully." });
+                department.ManagerEmail = null;
+                if (await _departmentServices.AddDepartment(department))
+                {
+                    return StatusCode(201, new { Message = "department created successfully." });
+                }
+                return BadRequest(new { Message = "There is an issue with the data" });
             }
-            return BadRequest(new { Message = "There is an issue with the data" });
+            catch (Exception ex)
+            {
+                _logger.LogError($"[{nameof(DepartmentController)}] - [{nameof(AddDepartment)}] - Error: {ex}");
+                throw ex;
+            }
         }
 
         [HttpGet]
         [Authorize(Roles = "admin")]
         public async Task<ActionResult<List<Department>>> GetDepartments()
         {
-            var result = await _departmentServices.GetDepartments();
-            if (result == null) return NotFound();
-            return Ok(result);
+            try
+            {
+                var result = await _departmentServices.GetDepartments();
+                if (result == null) return NotFound();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"[{nameof(DepartmentController)}] - [{nameof(GetDepartments)}] - Error: {ex}");
+                throw ex;
+            }
         }
 
         [HttpGet("statistics")]
         [Authorize(Roles = "admin")]
         public async Task<ActionResult<List<Dictionary<string, string>>>> GetDepartmentSatatistics()
         {
-            var statistics = await _departmentServices.GetDepartmentSatatistics();
-            return Ok(statistics);
+            try
+            {
+                var statistics = await _departmentServices.GetDepartmentSatatistics();
+                return Ok(statistics);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"[{nameof(DepartmentController)}] - [{nameof(GetDepartmentSatatistics)}] - Error: {ex}");
+                throw ex;
+            }
         }
 
         [HttpPut]
         [Authorize(Roles = "admin")]
         public async Task<ActionResult> UpdateDepartment([FromBody] Department department)
         {
-            if(department == null) return BadRequest();
-            bool departmentUpdated = await _departmentServices.UpdateDepartment(department);
-            if (departmentUpdated)
+            try
             {
-                return Ok();
+                if (department == null) return BadRequest();
+                bool departmentUpdated = await _departmentServices.UpdateDepartment(department);
+                if (departmentUpdated)
+                {
+                    return Ok();
+                }
+                return BadRequest();
             }
-            return BadRequest();
+            catch (Exception ex)
+            {
+                _logger.LogError($"[{nameof(DepartmentController)}] - [{nameof(UpdateDepartment)}] - Error: {ex}");
+                throw ex;
+            }
         }
     }
 }

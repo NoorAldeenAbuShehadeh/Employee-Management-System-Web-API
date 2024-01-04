@@ -73,7 +73,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public User? GetUser(string email)
+        public async Task<User>? GetUser(string email)
         {
             try
             {
@@ -89,7 +89,8 @@ namespace Employee_Management_System.DAL
                     Email = userDTO.Email,
                     Name = userDTO.Name,
                     Role = userDTO.Role,
-                    Password = userDTO.Password
+                    Password = userDTO.Password,
+                    Status = userDTO.Status,
                 };
                 _logger.LogInformation($"[{nameof(DUsers)}] - [{nameof(GetUser)}] - Get data for user");
                 return user;
@@ -165,7 +166,7 @@ namespace Employee_Management_System.DAL
                 return null;
             }
         }
-        public bool UpdateUser(User user)
+        public async Task<bool> UpdateUser(User user)
         {
            try
             {

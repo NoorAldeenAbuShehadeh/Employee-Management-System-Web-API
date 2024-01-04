@@ -136,7 +136,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public List<Attendance>? GetAttendanceReport(string employeeEmail, DateTime startDate)
+        public async Task<List<Attendance>>? GetAttendanceReport(string employeeEmail, DateTime startDate)
         {
             try
             {
@@ -183,7 +183,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public List<Attendance>? GetAttendanceReportForDepartment(string departmentName, DateTime startDate)
+        public async Task<List<Attendance>>? GetAttendanceReportForDepartment(string departmentName, DateTime? startDate)
         {
             try
             {

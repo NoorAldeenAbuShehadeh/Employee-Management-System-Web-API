@@ -54,7 +54,7 @@ builder.Services.AddSingleton(config)
                 .AddSingleton<IEmployeeServices, EmployeeServices>()
                 .AddSingleton<ILeaveServices, LeaveServices>()
                 .AddSingleton<ISalaryServices, SalaryServices>();
-
+//return leaves.Any() ? leaves : null; add it to each get items 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

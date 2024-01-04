@@ -48,7 +48,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public bool UpdateEmployee(Employee employee)
+        public async Task<bool> UpdateEmployee(Employee employee)
         {
             try
             {
@@ -152,7 +152,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public List<Employee>? GetEmployees(decimal minSalary)
+        public async Task<List<Employee>> FilterEmployeesBySalary(decimal minSalary)
         {
             try
             {
@@ -176,7 +176,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public List<Employee>? SerchEmployeesbyCityName(string cityName)
+        public async Task<List<Employee>>? SearchEmployeesbyCityName(string cityName)
         {
             try
             {
@@ -190,12 +190,12 @@ namespace Employee_Management_System.DAL
                         PhoneNumber = emp.PhoneNumber,
                     }).ToList();
 
-                _logger.LogInformation($"[{nameof(DEmployees)}] - [{nameof(SerchEmployeesbyCityName)}] - Retrived all employees lives in specific city");
+                _logger.LogInformation($"[{nameof(DEmployees)}] - [{nameof(SearchEmployeesbyCityName)}] - Retrived all employees lives in specific city");
                 return employees;
             }
             catch (Exception ex)
             {
-                _logger.LogError($"[{nameof(DEmployees)}] - [{nameof(SerchEmployeesbyCityName)}] - Error while retrive employees lives in specific city: {ex}");
+                _logger.LogError($"[{nameof(DEmployees)}] - [{nameof(SearchEmployeesbyCityName)}] - Error while retrive employees lives in specific city: {ex}");
                 throw ex;
             }
         }

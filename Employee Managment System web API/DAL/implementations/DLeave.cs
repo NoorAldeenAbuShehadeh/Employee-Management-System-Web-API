@@ -52,7 +52,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public bool UpdateLeave(Leave leave)
+        public async Task<bool> UpdateLeave(Leave leave)
         {
             try
             {
@@ -115,7 +115,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public List<Leave>? GetLeaves(string employeeEmail)
+        public async Task<List<Leave>>? GetLeaves(string employeeEmail)
         {
             try
             {
@@ -190,7 +190,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public List<Leave>? GetPendingLeaves(string departmentName)
+        public async Task<List<Leave>>? GetPendingLeaves(string departmentName)
         {
             try
             {
@@ -216,7 +216,7 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public List<Leave>? GetLeavesForDepartment(string departmentName)
+        public async Task<List<Leave>>? GetLeavesForDepartment(string departmentName)
         {
             try
             {
