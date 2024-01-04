@@ -1,0 +1,916 @@
+{
+	"info": {
+		"_postman_id": "09e4e8a5-6e8d-4d80-a501-0610f41fa699",
+		"name": "Employee Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25331169"
+	},
+	"item": [
+		{
+			"name": "log in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"samaerQadi@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQwNjUxNjcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.SHLLXSMPUirQWuRFsfaQPQUpQ4e-BxW6LqyXb37QeRk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"rami@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"name\": \"Rami Saleh\",\r\n  \"role\": \"manager\",\r\n  \"departmentName\": \"Finance\",\r\n  \"phoneNumber\": \"0547822341\",\r\n  \"address\": \"Nablus\",\r\n  \"salaryAmount\": 1100,\r\n  \"salaryBonuses\": 0,\r\n  \"salaryDeductions\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get employee info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJzYW1hZXJRYWRpQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Im1hbmFnZXIiLCJleHAiOjE3MDQzMjk0NjQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.PUzuFLSW7GH1pdLX422LssK0RTfcRtX0xXiqP2-apDI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/employees/GetEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"employees",
+						"GetEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update emloyee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQzMTc3OTQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.1iMv5dQHm_jbLlanDyJAlQKUSZXJ412HlhiI0Jko9jU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"EmployeeEmail\": \"mohammad@gmail.com\",\r\n  \"Role\": \"employee\",\r\n  \"DepartmentName\": \"Development\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update emloyee Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJzYW1hZXJRYWRpQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Im1hbmFnZXIiLCJleHAiOjE3MDQ0MDExNzMsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.pNzAYPx54aeb19_dXR9C6duVZK4zKdU8F0RP6SeX_to",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Address\": \"Ramallah\",\r\n  \"PhoneNumber\": \"0555174788\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/employees/updateGeneralInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"employees",
+						"updateGeneralInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add department",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQwNjUxNjcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.SHLLXSMPUirQWuRFsfaQPQUpQ4e-BxW6LqyXb37QeRk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"Finance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/departments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get departments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQwNjUxNjcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.SHLLXSMPUirQWuRFsfaQPQUpQ4e-BxW6LqyXb37QeRk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/departments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update departments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQyMTk4MzksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.Qc4o89PFVINZUZLIGLmdx76eowxuHcqbc0_RtNfuqk8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"Finance\",\r\n  \"ManagerEmail\": \"rami@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/departments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get departments statistics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQyMTk4MzksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.Qc4o89PFVINZUZLIGLmdx76eowxuHcqbc0_RtNfuqk8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/departments/statistics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"departments",
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get employees in department",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQwNjUxNjcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.SHLLXSMPUirQWuRFsfaQPQUpQ4e-BxW6LqyXb37QeRk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/employees/Development",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"employees",
+						"Development"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search For Employees By City",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQyMTk4MzksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.Qc4o89PFVINZUZLIGLmdx76eowxuHcqbc0_RtNfuqk8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/employees/SearchForEmployeesByCity?city=Nablus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"employees",
+						"SearchForEmployeesByCity"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Nablus"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get salaries",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQwNjUxNjcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.SHLLXSMPUirQWuRFsfaQPQUpQ4e-BxW6LqyXb37QeRk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/salaries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"salaries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee salary info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJzYWxlaEBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJtYW5hZ2VyIiwiZXhwIjoxNzA0MzI0NjM2LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzIyMSJ9.riGJ4XvHK_yX0Ge1SWSRTmAlJ6BvcbaNWpn8cmnzin8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/salaries/GetEmployeeSalaryDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"salaries",
+						"GetEmployeeSalaryDetails"
+					],
+					"query": [
+						{
+							"key": "employeeEmail",
+							"value": "s11923513@stu.najah.edu",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leave trend",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQwNjUxNjcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.SHLLXSMPUirQWuRFsfaQPQUpQ4e-BxW6LqyXb37QeRk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/leaves/leave-trend",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"leaves",
+						"leave-trend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get leaves",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQwNjUxNjcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.SHLLXSMPUirQWuRFsfaQPQUpQ4e-BxW6LqyXb37QeRk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/leaves",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"leaves"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add leave",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJOQWJ1U2hlaGFkZWhAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiZW1wbG95ZWUiLCJleHAiOjE3MDQwNjgyNzMsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.2jnTJuTiGoT5olZMngy63bDf29iBIQfUDR3cpWcqf_s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"Description\" : \"seck leave\",\r\n     \"StartDate\" : \"2023-12-18T08:30:00.000000\",\r\n     \"EndDate\" : \"2023-12-20T08:30:00.000000\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/leaves",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"leaves"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update leave",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQzMDkzNDIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.Num_jAHmhwseC4VBrElv-UllY-CLcfFleGK8164CbaQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"Id\":\"c0da7b61-307c-40ab-37b5-08dc0a0bb21b\",\r\n     \"Status\":\"Approved\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/leaves",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"leaves"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add attendance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJOQWJ1U2hlaGFkZWhAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiZW1wbG95ZWUiLCJleHAiOjE3MDQwNjgyNzMsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.2jnTJuTiGoT5olZMngy63bDf29iBIQfUDR3cpWcqf_s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"checkIn\": \"2023-12-18T08:30:00.000000\",\r\n     \"checkOut\": \"2023-12-18T17:00:00.000000\",\r\n     \"Status\" : \"Remote\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/attendances",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"attendances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get department attendance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQyMTk4MzksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.Qc4o89PFVINZUZLIGLmdx76eowxuHcqbc0_RtNfuqk8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/attendances/Development?startDate=2023-12-18T08:30:00.000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"attendances",
+						"Development"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2023-12-18T08:30:00.000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get employee attendance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtb21lbkBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJtYW5hZ2VyIiwiZXhwIjoxNzA0MjE5NzM1LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzIyMSJ9.-Ezqxu9NkXKTfgpS6DG7IpWgsTbMzc5xTCHjn2VRpJA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "startDate",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5260/api/attendances/GetAttendanceForEmployee?employeeEmail=s11924574@stu.najah.edu&startDate=2023-12-10T08:30:00.000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"attendances",
+						"GetAttendanceForEmployee"
+					],
+					"query": [
+						{
+							"key": "employeeEmail",
+							"value": "s11924574@stu.najah.edu"
+						},
+						{
+							"key": "startDate",
+							"value": "2023-12-10T08:30:00.000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter Employees By Salary",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQyMTk4MzksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.Qc4o89PFVINZUZLIGLmdx76eowxuHcqbc0_RtNfuqk8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "startDate",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5260/api/employees/FilterEmployeesBySalary?minSalary=1200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"employees",
+						"FilterEmployeesBySalary"
+					],
+					"query": [
+						{
+							"key": "minSalary",
+							"value": "1200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all attendances",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQyMTgzMjEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.zKbkTfvRyKjHrXCkjopGE2ZAU8Z6sIOd-cbs_DJH-BM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/attendances?startDate=2023-12-18T08:30:00.000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"attendances"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2023-12-18T08:30:00.000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all leaves for department",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQyMTgzMjEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.zKbkTfvRyKjHrXCkjopGE2ZAU8Z6sIOd-cbs_DJH-BM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/leaves/Development",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"leaves",
+						"Development"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pending leaves for department",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQzMDkzNDIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.Num_jAHmhwseC4VBrElv-UllY-CLcfFleGK8164CbaQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/leaves/Development/pendingLeaves",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"leaves",
+						"Development",
+						"pendingLeaves"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get leaves for employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhbm9vcmFsZGVlbjlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJleHAiOjE3MDQyMTgzMjEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjIxIn0.zKbkTfvRyKjHrXCkjopGE2ZAU8Z6sIOd-cbs_DJH-BM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5260/api/leaves/GetleavesForEmployee?employeeEmail=NAbuShehadeh@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"leaves",
+						"GetleavesForEmployee"
+					],
+					"query": [
+						{
+							"key": "employeeEmail",
+							"value": "NAbuShehadeh@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
