@@ -10,29 +10,39 @@ namespace Employee_Managment_System_web_API.Controllers
     public class LoginController : ControllerBase
     {
         private readonly ILoginServices _loginServices;
-        public LoginController(ILoginServices loginServices)
+        private readonly ILogger<LoginController> _logger;
+        public LoginController(ILoginServices loginServices, ILogger<LoginController> logger)
         {
             _loginServices = loginServices;
+            _logger = logger;
         }
 
         [HttpPost]
         [AllowAnonymous]
         public async Task<ActionResult<string>> Login([FromBody] User userLogin)
         {
-            if (userLogin == null)
+            try
             {
-                return BadRequest();
+                if (userLogin == null)
+                {
+                    return BadRequest();
+                }
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                var token = await _loginServices.Authenticate(userLogin);
+                if (token != null)
+                {
+                    return Ok(new { token = token });
+                }
+                return Unauthorized("Wrong email and/or password");
             }
-            if (!ModelState.IsValid)
+            catch (Exception ex)
             {
-                return BadRequest(ModelState);
+                _logger.LogError($"[{nameof(LoginController)}] - [{nameof(Login)}] - Error: {ex}");
+                throw ex;
             }
-            var token = await _loginServices.Authenticate(userLogin);
-            if (token != null)
-            {
-                return Ok(new { token = token });
-            }
-            return Unauthorized("Wrong email and/or password");
         }
 
     }
