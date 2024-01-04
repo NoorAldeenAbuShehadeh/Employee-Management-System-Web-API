@@ -1,7 +1,5 @@
 ﻿using Employee_Management_System.DAL;
 using Employee_Management_System.Model;
-using log4net.Core;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Employee_Management_System.Services
 {
@@ -38,7 +36,7 @@ namespace Employee_Management_System.Services
                 var result = await _dLeave.GetLeaves();
                 return result;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveServices)}] - [{nameof(GetLeaves)}] - Error while get all leaves: {ex}");
                 throw ex;
@@ -59,7 +57,7 @@ namespace Employee_Management_System.Services
                          .ToList();
                 return result;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveServices)}] - [{nameof(LeaveTrend)}] - Error while get teave trend: {ex}");
                 throw ex;
@@ -80,7 +78,7 @@ namespace Employee_Management_System.Services
                 var leaves = await _dLeave.GetLeavesForDepartment(departmentName);
                 return (leaves, true);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveServices)}] - [{nameof(GetDepartmentLeaves)}] - Error while get department leaves: {ex}");
                 throw ex;
@@ -142,6 +140,25 @@ namespace Employee_Management_System.Services
                 throw ex;
             }
         }
-
+        public async Task<bool> UpdateLeaveStatus(Leave leave)
+        {
+            try
+            {
+                Leave? l = _dLeave.GetLeave(leave.Id);
+                if (l != null)
+                {
+                    l.Status = leave.Status;
+                    bool leaveUpdated = await _dLeave.UpdateLeave(l);
+                    if (leaveUpdated) return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"[{nameof(LeaveServices)}] - [{nameof(UpdateLeaveStatus)}] - Error while update leaves: {ex.Message}");
+                throw ex;
+            }
+        }
+        
     }
 }

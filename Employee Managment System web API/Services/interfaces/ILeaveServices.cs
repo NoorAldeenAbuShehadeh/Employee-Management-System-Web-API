@@ -10,5 +10,7 @@ namespace Employee_Management_System.Services
         public Task<(List<Leave>, bool)> GetDepartmentLeaves(User user, string departmentName);
         public Task<(List<Leave>, bool)> GetPendingLeavesForDepartment(User user, string departmentName);
         public Task<(List<Leave>, bool)> GetLeavesForEmployee(User user, string? employeeEmail);
+        public Task<bool> UpdateLeaveStatus(Leave leave);
+
     }
 }

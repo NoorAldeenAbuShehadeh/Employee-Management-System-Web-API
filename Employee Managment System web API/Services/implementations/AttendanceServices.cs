@@ -79,7 +79,7 @@ namespace Employee_Management_System.Services
             {
                 if (user.Role == "employee")
                 {
-                    var attendances = _dAttendance.GetAttendanceReport(user.Email, startDate);
+                    var attendances = await _dAttendance.GetAttendanceReport(user.Email, startDate);
                     return (attendances, true);
                 }
                 else if (employeeEmail != null)
@@ -90,13 +90,13 @@ namespace Employee_Management_System.Services
                         Employee? manager = await _dEmployee.GetEmployee(user.Email);
                         if (manager.DepartmentName == employee.DepartmentName)
                         {
-                            var attendances = _dAttendance.GetAttendanceReport(employeeEmail, startDate);
+                            var attendances = await _dAttendance.GetAttendanceReport(employeeEmail, startDate);
                             return (attendances, true);
                         }
                     }
                     else if (user.Role == "admin")
                     {
-                        var attendances = _dAttendance.GetAttendanceReport(employeeEmail, startDate);
+                        var attendances = await _dAttendance.GetAttendanceReport(employeeEmail, startDate);
                         return(attendances, true);
                     }
                 }
@@ -108,5 +108,6 @@ namespace Employee_Management_System.Services
                 throw ex;
             }
         }
+        
     }
 }
