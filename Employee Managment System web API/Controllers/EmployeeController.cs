@@ -25,14 +25,14 @@ namespace Employee_Managment_System_web_API.Controllers
             { 
                 if (await _employeeServices.AddEmployee(employeeCreationModel))
                 {
-                    return StatusCode(201, new { Message = "Employee added successfully" });
+                    return Ok();
                 }
-                return BadRequest(new { Message = "There is an issue with the data" });
+                return BadRequest();
             }
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(EmployeeController)}] - [{nameof(AddEmployee)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -49,7 +49,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(EmployeeController)}] - [{nameof(GetEmployees)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -71,7 +71,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(EmployeeController)}] - [{nameof(GetEmployeesInDepartment)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -87,7 +87,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(EmployeeController)}] - [{nameof(FilterEmployeesBySalary)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -103,7 +103,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(EmployeeController)}] - [{nameof(SearchForEmployeesByCity)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -121,7 +121,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(EmployeeController)}] - [{nameof(UpdateEmployee)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -148,7 +148,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(EmployeeController)}] - [{nameof(GetEmployeeInfo)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -171,7 +171,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(EmployeeController)}] - [{nameof(UpdateGeneralEmployeeInfo)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
     }

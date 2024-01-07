@@ -33,7 +33,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(DepartmentController)}] - [{nameof(AddDepartment)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -50,7 +50,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(DepartmentController)}] - [{nameof(GetDepartments)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -66,7 +66,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(DepartmentController)}] - [{nameof(GetDepartmentSatatistics)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -87,7 +87,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(DepartmentController)}] - [{nameof(UpdateDepartment)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
     }

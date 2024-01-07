@@ -1,4 +1,5 @@
 ﻿using Employee_Management_System.Model;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace Employee_Management_System.DAL
@@ -18,8 +19,7 @@ namespace Employee_Management_System.DAL
             {
                 if (employee == null)
                 {
-                    Console.WriteLine("Bad Request should has a employee to add it");
-                    _logger.LogError("Bad Request should has a employee to add it");
+                    _logger.LogError($"[{nameof(DEmployees)}] - [{nameof(AddEmployee)}] - Bad Request should has a employee to add it");
                     return false;
                 }
                 else
@@ -32,7 +32,7 @@ namespace Employee_Management_System.DAL
                         DepartmentName = employee.DepartmentName,
                         PhoneNumber = employee.PhoneNumber
                     };
-                    _context.Employees.Add(employeeDTO);
+                    await _context.Employees.AddAsync(employeeDTO);
                     _logger.LogInformation($"[{nameof(DEmployees)}] - [{nameof(AddEmployee)}] - Added new Employee: {employee.UserEmail}");
                     return true;
                 }
@@ -52,11 +52,10 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                EmployeeDTO? employeeDTO = _context.Employees.FirstOrDefault(e => e.UserEmail == employee.UserEmail);
+                EmployeeDTO? employeeDTO = await _context.Employees.FirstOrDefaultAsync(e => e.UserEmail == employee.UserEmail);
                 if (employeeDTO == null)
                 {
-                    Console.WriteLine($"Employee with email {employee?.UserEmail} not found.");
-                    _logger.LogError($"Employee with email {employee?.UserEmail} not found.");
+                    _logger.LogError($"[{nameof(DEmployees)}] - [{nameof(UpdateEmployee)}] - Employee with email {employee?.UserEmail} not found.");
                     return false;
                 }
                 else
@@ -84,7 +83,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var employees = _context.Employees
+                var employees = await _context.Employees
                     .Select(e => new Employee
                     {
                         UserEmail = e.UserEmail,
@@ -92,7 +91,7 @@ namespace Employee_Management_System.DAL
                         DepartmentName = e.DepartmentName,
                         PhoneNumber = e.PhoneNumber
                     })
-                    .ToList();
+                    .ToListAsync();
                 _logger.LogInformation($"[{nameof(DEmployees)}] - [{nameof(GetEmployees)}] - Retrived all employees");
                 return employees;
             }
@@ -106,7 +105,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var employeeDTOs = (from emp in _context.Employees
+                var employeeDTOs = await (from emp in _context.Employees
                                     join user in _context.Users on emp.DepartmentName equals departmentName
                                     where (emp.UserEmail == user.Email && user.Role == "employee")
                                     select new Employee
@@ -115,7 +114,7 @@ namespace Employee_Management_System.DAL
                                         Address = emp.Address,
                                         DepartmentName = emp.DepartmentName,
                                         PhoneNumber = emp.PhoneNumber,
-                                    }).ToList();
+                                    }).ToListAsync();
                 _logger.LogInformation($"[{nameof(DEmployees)}] - [{nameof(GetEmployees)}] - Retrived all employees in department");
                 return employeeDTOs;
             }
@@ -129,11 +128,10 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                EmployeeDTO? employeeDTO = _context.Employees.FirstOrDefault(e => e.UserEmail == email);
+                EmployeeDTO? employeeDTO = await _context.Employees.FirstOrDefaultAsync(e => e.UserEmail == email);
                 if (employeeDTO == null)
                 {
-                    Console.WriteLine($"Employee with email {email} not found.");
-                    _logger.LogError($"Employee with email {email} not found.");
+                    _logger.LogError($"[{nameof(DEmployees)}] - [{nameof(GetEmployee)}] - Employee with email {email} not found.");
                     return null;
                 }
                 Employee employee = new Employee
@@ -156,7 +154,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var employees = (from emp in _context.Employees
+                var employees = await (from emp in _context.Employees
                                  join user in _context.Users on emp.UserEmail equals user.Email
                                  join salary in _context.Salaries on emp.UserEmail equals salary.EmployeeEmail
                                  where (salary.Amount >= minSalary)
@@ -166,7 +164,7 @@ namespace Employee_Management_System.DAL
                                      Address = emp.Address,
                                      DepartmentName = emp.DepartmentName,
                                      PhoneNumber = emp.PhoneNumber,
-                                 }).ToList();
+                                 }).ToListAsync();
                 _logger.LogInformation($"[{nameof(DEmployees)}] - [{nameof(GetEmployees)}] - Retrived all employees have min salary = {minSalary}");
                 return employees;
             }
@@ -180,7 +178,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var employees = _context.Employees
+                var employees = await _context.Employees
                     .Where(emp => emp.Address.ToLower().Contains(cityName.Trim().ToLower()))
                     .Select(emp => new Employee
                     {
@@ -188,7 +186,7 @@ namespace Employee_Management_System.DAL
                         Address = emp.Address,
                         DepartmentName = emp.DepartmentName,
                         PhoneNumber = emp.PhoneNumber,
-                    }).ToList();
+                    }).ToListAsync();
 
                 _logger.LogInformation($"[{nameof(DEmployees)}] - [{nameof(SearchEmployeesbyCityName)}] - Retrived all employees lives in specific city");
                 return employees;

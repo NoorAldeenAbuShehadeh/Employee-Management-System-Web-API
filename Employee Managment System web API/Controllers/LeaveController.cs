@@ -33,7 +33,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveController)}] - [{nameof(AddLeave)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -50,7 +50,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveController)}] - [{nameof(GetLeaves)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -67,7 +67,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveController)}] - [{nameof(LeaveTrend)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -85,7 +85,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveController)}] - [{nameof(GetDepartmentLeaves)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -105,7 +105,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveController)}] - [{nameof(GetPendingLeavesForDepartment)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -126,7 +126,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveController)}] - [{nameof(AddLeave)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -144,7 +144,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LeaveController)}] - [{nameof(UpdateLeaveStatus)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 

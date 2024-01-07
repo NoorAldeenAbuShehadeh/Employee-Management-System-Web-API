@@ -1,5 +1,5 @@
 ﻿using Employee_Management_System.Model;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace Employee_Management_System.DAL
@@ -20,8 +20,7 @@ namespace Employee_Management_System.DAL
             {
                 if (attendance == null)
                 {
-                    Console.WriteLine("Bad Request should has a attendance to add it");
-                    _logger.LogError("Bad Request should has a attendance to add it");
+                    _logger.LogError($"[{nameof(DAttendance)}] - [{nameof(AddAttendance)}] - Bad Request should has a attendance to add it");
                     return false;
                 }
                 else
@@ -34,10 +33,10 @@ namespace Employee_Management_System.DAL
                         CheckOut = attendance.CheckOut,
                         Status = Enum.Parse<AttendanceStatus>(attendance.Status),
                     };
-                    _context.Attendances.Add(attendanceDTO);
-                    _context.SaveChanges();
+                    await _context.Attendances.AddAsync(attendanceDTO);
+                    await _context.SaveChangesAsync();
                     var id = attendance.Id;
-                    _logger.LogInformation($"Added new Attendance for: {attendance.EmployeeEmail}");
+                    _logger.LogInformation($"[{nameof(DAttendance)}] - [{nameof(AddAttendance)}] - Added new Attendance for: {attendance.EmployeeEmail}");
                     return true;
                 }
             }
@@ -52,15 +51,14 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public bool UpdateAttendance(Attendance attendance)
+        public async Task<bool> UpdateAttendance(Attendance attendance)
         {
             try
             {
                 AttendanceDTO? attendanceDTO = _context.Attendances.FirstOrDefault(a => a.Id == attendance.Id);
                 if (attendanceDTO == null)
                 {
-                    Console.WriteLine($"Attendance with Id {attendance.Id} not found.");
-                    _logger.LogError($"Attendance with Id {attendance.Id} not found.");
+                    _logger.LogError($"[{nameof(DAttendance)}] - [{nameof(UpdateAttendance)}] - Attendance with Id {attendance.Id} not found.");
                     return false;
                 }
                 else
@@ -69,7 +67,7 @@ namespace Employee_Management_System.DAL
                     attendanceDTO.Status = Enum.Parse<AttendanceStatus>(attendance.Status);
                     attendanceDTO.CheckIn = attendance.CheckIn;
                     attendanceDTO.CheckOut = attendance.CheckOut;
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                     _logger.LogInformation($"[{nameof(DAttendance)}] - [{nameof(UpdateAttendance)}] - Attendance with Id {attendance.Id} updated.");
                     return true;
                 }
@@ -85,11 +83,11 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public List<Attendance>? GetAttendances(string employeeEmail)
+        public async Task<List<Attendance>>? GetAttendances(string employeeEmail)
         {
             try
             {
-                var attendances = _context.Attendances
+                var attendances = await _context.Attendances
                     .Where(a => a.EmployeeEmail == employeeEmail)
                     .Select(a => new Attendance
                     {
@@ -99,7 +97,7 @@ namespace Employee_Management_System.DAL
                         CheckIn = a.CheckIn,
                         Status = a.Status.ToString(),
                     })
-                    .ToList();
+                    .ToListAsync();
 
                 _logger.LogInformation($"[{nameof(DAttendance)}] - [{nameof(GetAttendances)}] - Retrieved attendances for employee with email {employeeEmail}");
                 return attendances;
@@ -114,7 +112,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var attendances = _context.Attendances
+                var attendances = await _context.Attendances
                    .Where(a => a.CheckIn >= startDate)
                    .Select(a => new Attendance
                    {
@@ -126,7 +124,7 @@ namespace Employee_Management_System.DAL
                    })
                    .OrderBy(a => a.EmployeeEmail)
                    .ThenBy(a => a.CheckIn)
-                   .ToList();
+                   .ToListAsync();
                 _logger.LogInformation($"[{nameof(DAttendance)}] - [{nameof(GetAttendances)}] - retrived all attendances");
                 return attendances;
             }
@@ -140,7 +138,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var attendances = _context.Attendances
+                var attendances = await _context.Attendances
                 .Where(a => a.EmployeeEmail == employeeEmail && a.CheckIn >= startDate)
                 .Select(a => new Attendance
                 {
@@ -150,7 +148,7 @@ namespace Employee_Management_System.DAL
                     CheckIn = a.CheckIn,
                     Status = a.Status.ToString(),
                 })
-                .ToList();
+                .ToListAsync();
                 _logger.LogInformation($"[{nameof(DAttendance)}] - [{nameof(GetAttendanceReport)}] - Get Attendance Report");
                 return attendances;
             }
@@ -164,17 +162,17 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var attendances = (from emp in _context.Employees
-                                   join attendance in _context.Attendances on  emp.UserEmail equals attendance.EmployeeEmail 
-                                   where emp.DepartmentName == departmentName
-                                   select new Attendance
-                                   {
-                                       Id = attendance.Id,
-                                       EmployeeEmail = attendance.EmployeeEmail,
-                                       CheckOut = attendance.CheckOut,
-                                       CheckIn = attendance.CheckIn,
-                                       Status = attendance.Status.ToString(),
-                                   }).ToList();
+                var attendances = await (from emp in _context.Employees
+                                         join attendance in _context.Attendances on emp.UserEmail equals attendance.EmployeeEmail
+                                         where emp.DepartmentName == departmentName
+                                         select new Attendance
+                                         {
+                                             Id = attendance.Id,
+                                             EmployeeEmail = attendance.EmployeeEmail,
+                                             CheckOut = attendance.CheckOut,
+                                             CheckIn = attendance.CheckIn,
+                                             Status = attendance.Status.ToString(),
+                                         }).ToListAsync();
                 return attendances;
             }
             catch (Exception ex)
@@ -187,17 +185,17 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var attendances = (from emp in _context.Employees
-                                   join attendance in _context.Attendances on emp.UserEmail equals attendance.EmployeeEmail
-                                   where (attendance.CheckIn >= startDate && emp.DepartmentName == departmentName)
-                                      select new Attendance
-                                      {
-                                          Id = attendance.Id,
-                                          EmployeeEmail = attendance.EmployeeEmail,
-                                          CheckOut = attendance.CheckOut,
-                                          CheckIn = attendance.CheckIn,
-                                          Status = attendance.Status.ToString(),
-                                      }).ToList();
+                var attendances = await (from emp in _context.Employees
+                                         join attendance in _context.Attendances on emp.UserEmail equals attendance.EmployeeEmail
+                                         where (attendance.CheckIn >= startDate && emp.DepartmentName == departmentName)
+                                         select new Attendance
+                                         {
+                                             Id = attendance.Id,
+                                             EmployeeEmail = attendance.EmployeeEmail,
+                                             CheckOut = attendance.CheckOut,
+                                             CheckIn = attendance.CheckIn,
+                                             Status = attendance.Status.ToString(),
+                                         }).ToListAsync();
                 return attendances;
             }
             catch (Exception ex)
@@ -211,7 +209,7 @@ namespace Employee_Management_System.DAL
             var validationContext = new ValidationContext(attendance, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
 
-            if (!Validator.TryValidateObject(attendance, validationContext, validationResults, validateAllProperties: true)|| !Enum.TryParse<AttendanceStatus>(attendance.Status, out AttendanceStatus status))
+            if (!Validator.TryValidateObject(attendance, validationContext, validationResults, validateAllProperties: true) || !Enum.TryParse<AttendanceStatus>(attendance.Status, out AttendanceStatus status))
             {
                 var errorMessages = validationResults.Select(result => result.ErrorMessage);
                 throw new ValidationException(string.Join(Environment.NewLine, errorMessages));

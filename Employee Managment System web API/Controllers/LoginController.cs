@@ -41,7 +41,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(LoginController)}] - [{nameof(Login)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 

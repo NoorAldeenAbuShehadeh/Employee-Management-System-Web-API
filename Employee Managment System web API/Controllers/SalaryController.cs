@@ -30,7 +30,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(SalaryController)}] - [{nameof(GetEmployeeSalaries)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -48,7 +48,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(SalaryController)}] - [{nameof(GetEmployeeSalaryDetails)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
 
@@ -66,7 +66,7 @@ namespace Employee_Managment_System_web_API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(SalaryController)}] - [{nameof(UpdateSalary)}] - Error: {ex}");
-                throw ex;
+                return StatusCode(500, "Internal Server Error");
             }
         }
     }

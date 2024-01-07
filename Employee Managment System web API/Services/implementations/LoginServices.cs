@@ -1,6 +1,5 @@
 ﻿using Employee_Management_System.DAL;
 using Employee_Management_System.Model;
-using Employee_Managment_System_web_API.Controllers;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;

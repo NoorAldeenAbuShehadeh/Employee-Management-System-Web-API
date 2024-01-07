@@ -1,4 +1,5 @@
 ﻿using Employee_Management_System.Model;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace Employee_Management_System.DAL
@@ -19,8 +20,7 @@ namespace Employee_Management_System.DAL
             {
                 if (salary == null)
                 {
-                    Console.WriteLine("Bad Request should has a salary to add it");
-                    _logger.LogError("Bad Request should has a salary to add it");
+                    _logger.LogError($"[{nameof(DSalary)}] - [{nameof(AddSalary)}] - Bad Request should has a salary to add it");
                     return false;
                 }
                 else
@@ -33,7 +33,7 @@ namespace Employee_Management_System.DAL
                         Bonuses = salary.Bonuses,
                         Deductions = salary.Deductions,
                     };
-                    _context.Salaries.Add(salaryDTO);
+                    await _context.Salaries.AddAsync(salaryDTO);
                     _logger.LogInformation($"[{nameof(DSalary)}] - [{nameof(AddSalary)}] - Added salary for employee: {salary.EmployeeEmail}");
                     return true;
                 }
@@ -53,11 +53,10 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                SalaryDTO? salaryDTO = _context.Salaries.FirstOrDefault(s => s.EmployeeEmail == salary.EmployeeEmail);
+                SalaryDTO? salaryDTO = await _context.Salaries.FirstOrDefaultAsync(s => s.EmployeeEmail == salary.EmployeeEmail);
                 if (salaryDTO == null)
                 {
-                    Console.WriteLine($"salary with employee email {salary?.EmployeeEmail} not found.");
-                    _logger.LogError($"salary with employee email {salary?.EmployeeEmail} not found.");
+                    _logger.LogError($"[{nameof(DSalary)}] - [{nameof(UpdateSalary)}] - Salary with employee email {salary?.EmployeeEmail} not found.");
                     return false;
                 }
                 else
@@ -66,8 +65,8 @@ namespace Employee_Management_System.DAL
                     salaryDTO.Amount = salary.Amount;
                     salaryDTO.Bonuses = salary.Bonuses;
                     salaryDTO.Deductions = salary.Deductions;
-                    _context.SaveChanges();
-                    _logger.LogInformation($"[{nameof(DSalary)}] - [{nameof(UpdateSalary)}] - salary with employee email {salary?.EmployeeEmail} updated.");
+                    await _context.SaveChangesAsync();
+                    _logger.LogInformation($"[{nameof(DSalary)}] - [{nameof(UpdateSalary)}] - Salary with employee email {salary?.EmployeeEmail} updated.");
                     return true;
                 }
             }
@@ -86,11 +85,10 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                SalaryDTO? salaryDTO = _context.Salaries.FirstOrDefault(s => s.EmployeeEmail == employeeEmail.Trim());
+                SalaryDTO? salaryDTO = await _context.Salaries.FirstOrDefaultAsync(s => s.EmployeeEmail == employeeEmail.Trim());
                 if (salaryDTO == null)
                 {
-                    Console.WriteLine($"salary with employee email {employeeEmail} not found.");
-                    _logger.LogError($"salary with employee email {employeeEmail} not found.");
+                    _logger.LogError($"[{nameof(DSalary)}] - [{nameof(GetSalary)}] - Salary with employee email {employeeEmail} not found.");
                     return null;
                 }
                 else
@@ -116,7 +114,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var salarys = _context.Salaries
+                var salarys = await _context.Salaries
                     .Select(s => new Salary
                     {
                         Amount = s.Amount,
@@ -124,7 +122,7 @@ namespace Employee_Management_System.DAL
                         Deductions = s.Deductions,
                         EmployeeEmail = s.EmployeeEmail
                     })
-                    .ToList();
+                    .ToListAsync();
                 _logger.LogInformation($"[{nameof(DSalary)}] - [{nameof(GetSalaries)}] - Retrived all salaries");
                 return salarys;
             }

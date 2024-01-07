@@ -1,5 +1,5 @@
 ﻿using Employee_Management_System.Model;
-using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography;
 using System.Text;
@@ -21,8 +21,7 @@ namespace Employee_Management_System.DAL
             {
                 if (user == null)
                 {
-                    Console.WriteLine("Bad Request should has a user to add it");
-                    _logger.LogError("Bad Request should has a user to add it");
+                    _logger.LogError($"[{nameof(DUsers)}] - [{nameof(AddUser)}] - Bad Request should has a user to add it");
                     return false;
                 }
                 else
@@ -36,7 +35,7 @@ namespace Employee_Management_System.DAL
                         Role = user.Role,
                         Status = user.Status
                     };
-                    _context.Users.Add(userDTO);
+                    await _context.Users.AddAsync(userDTO);
                     _logger.LogInformation($"[{nameof(DUsers)}] - [{nameof(AddUser)}] - Added new user: {user.Email}");
                     return true;
                 }
@@ -46,24 +45,24 @@ namespace Employee_Management_System.DAL
                 _logger.LogError($"[{nameof(DUsers)}] - [{nameof(AddUser)}] - Validation Error while add new user: {ex}");
                 return false;
             }
-            catch (Exception ex) 
-            { 
+            catch (Exception ex)
+            {
                 _logger.LogError($"[{nameof(DUsers)}] - [{nameof(AddUser)}] - Error while add new user: {ex}");
                 throw ex;
             }
         }
-        public List<User>? GetUsers()
+        public async Task<List<User>>? GetUsers()
         {
             try
             {
-                var users = _context.Users
+                var users = await _context.Users
                     .Select(u => new User
                     {
                         Email = u.Name,
                         Name = u.Name,
                         Role = u.Role,
                     })
-                    .ToList();
+                    .ToListAsync();
                 _logger.LogInformation($"[{nameof(DUsers)}] - [{nameof(GetUsers)}] - Retrived all users");
                 return users;
             }
@@ -77,11 +76,10 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                UserDTO? userDTO = _context.Users.FirstOrDefault(u => u.Email == email);
+                UserDTO? userDTO = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
                 if (userDTO == null)
                 {
-                    Console.WriteLine($"user with email {email} not found.");
-                    _logger.LogError($"user with email {email} not found.");
+                    _logger.LogError($"[{nameof(DUsers)}] - [{nameof(GetUser)}] - User with email {email} not found.");
                     return null;
                 }
                 User user = new User
@@ -101,26 +99,25 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public bool DeleteUser(string email)
+        public async Task<bool> DeleteUser(string email)
         {
             try
             {
-                UserDTO? userDTO = _context.Users.FirstOrDefault(u => u.Email == email);
+                UserDTO? userDTO = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
                 if (userDTO == null)
                 {
-                    Console.WriteLine($"User with email {email} not found.");
-                    _logger.LogError($"User with email {email} not found.");
+                    _logger.LogError($"[{nameof(DUsers)}] - [{nameof(DeleteUser)}] - User with email {email} not found.");
                     return false;
                 }
                 else
                 {
                     userDTO.Status = "inActive";
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                     _logger.LogInformation($"[{nameof(DUsers)}] - [{nameof(DeleteUser)}] - User with email {email} deleted.");
                     return true;
                 }
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 _logger.LogError($"[{nameof(DUsers)}] - [{nameof(DeleteUser)}] - Error while delete user: {ex}");
                 throw ex;
@@ -130,26 +127,25 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                UserDTO? userDTO = _context.Users.FirstOrDefault(u => u.Email == email);
+                UserDTO? userDTO = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
                 if (userDTO == null)
                 {
-                    Console.WriteLine($"User with email {email} not found.");
-                    _logger.LogError($"User with email {email} not found.");
+                    _logger.LogError($"[{nameof(DUsers)}] - [{nameof(LogIn)}] - User with email {email} not found.");
                     return null;
                 }
                 else
                 {
                     string userPassword = userDTO.Password;
-                    if (userPassword == password) 
+                    if (userPassword == password)
                     {
-                        User user = new User() 
-                            {  
-                                Email = userDTO.Email,
-                                Role=userDTO.Role,
-                                Name=userDTO.Name,
-                                Status=userDTO.Status,
-                                Password=userDTO.Password 
-                            };
+                        User user = new User()
+                        {
+                            Email = userDTO.Email,
+                            Role = userDTO.Role,
+                            Name = userDTO.Name,
+                            Status = userDTO.Status,
+                            Password = userDTO.Password
+                        };
                         _logger.LogInformation($"[{nameof(DUsers)}] - [{nameof(LogIn)}] - User with email {email} logged in.");
                         return user;
                     }
@@ -168,13 +164,12 @@ namespace Employee_Management_System.DAL
         }
         public async Task<bool> UpdateUser(User user)
         {
-           try
+            try
             {
-                UserDTO? userDTO = _context.Users.FirstOrDefault(u => u.Email == user.Email);
+                UserDTO? userDTO = await _context.Users.FirstOrDefaultAsync(u => u.Email == user.Email);
                 if (userDTO == null)
                 {
-                    Console.WriteLine($"User with email {user?.Email} not found.");
-                    _logger.LogError($"User with email {user?.Email} not found.");
+                    _logger.LogError($"[{nameof(DUsers)}] - [{nameof(UpdateUser)}] - User with email {user?.Email} not found.");
                     return false;
                 }
                 else
@@ -189,14 +184,12 @@ namespace Employee_Management_System.DAL
             }
             catch (ValidationException ex)
             {
-                Console.WriteLine($"Validation Error: {ex.Message}");
-                _logger.LogError($"Validation Error while update user: {ex.Message}");
+                _logger.LogError($"[{nameof(DUsers)}] - [{nameof(UpdateUser)}] - Validation Error while update user: {ex.Message}");
                 return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error while update user: {ex.Message}");
-                _logger.LogError($"Error while update user: {ex.Message}");
+                _logger.LogError($"[{nameof(DUsers)}] - [{nameof(UpdateUser)}] - Error while update user: {ex.Message}");
                 return false;
             }
         }
@@ -221,7 +214,7 @@ namespace Employee_Management_System.DAL
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error while encoding password: {ex.Message}");
+                _logger.LogError($"[{nameof(DUsers)}] - [{nameof(EncodePassword)}] - Error while encoding password: {ex.Message}");
                 return null;
             }
         }

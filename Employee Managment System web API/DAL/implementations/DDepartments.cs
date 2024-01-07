@@ -1,5 +1,5 @@
 ﻿using Employee_Management_System.Model;
-using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace Employee_Management_System.DAL
@@ -21,8 +21,7 @@ namespace Employee_Management_System.DAL
             {
                 if (department == null)
                 {
-                    Console.WriteLine("Bad Request should has a department to add it");
-                    _logger.LogError("Bad Request should has a department to add it");
+                    _logger.LogError($"[{nameof(DDepartments)}] - [{nameof(AddDepartment)}] - Bad Request should has a department to add it");
                     return false;
                 }
                 else
@@ -33,8 +32,8 @@ namespace Employee_Management_System.DAL
                         Name = department.Name,
                         ManagerEmail = department.ManagerEmail,
                     };
-                    _context.Departments.Add(departmentDTO);
-                    _context.SaveChanges();
+                    await _context.Departments.AddAsync(departmentDTO);
+                    await _context.SaveChangesAsync();
                     _logger.LogInformation($"[{nameof(DDepartments)}] - [{nameof(AddDepartment)}] - Added new Department: {department.Name}");
                     return true;
                 }
@@ -52,15 +51,15 @@ namespace Employee_Management_System.DAL
         }
         public async Task<List<Department>> GetDepartments()
         {
-            try 
-            { 
-                var departmentDTOs = _context.Departments
+            try
+            {
+                var departmentDTOs = await _context.Departments
                     .Select(d => new Department
                     {
                         ManagerEmail = d.ManagerEmail,
                         Name = d.Name,
                     })
-                    .ToList();
+                    .ToListAsync();
                 _logger.LogInformation($"[{nameof(DDepartments)}] - [{nameof(GetDepartments)}] - Retrived all departments");
                 return departmentDTOs;
             }
@@ -74,20 +73,18 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                DepartmentDTO? departmentDTO = _context.Departments.FirstOrDefault(d => d.Name == department.Name);
+                DepartmentDTO? departmentDTO = await _context.Departments.FirstOrDefaultAsync(d => d.Name == department.Name);
                 if (departmentDTO == null)
                 {
-                    Console.WriteLine($"Department with Name {departmentDTO?.Name} not found.");
                     _logger.LogError($"[{nameof(DDepartments)}] - [{nameof(UpdateDepartment)}] - Department with Name {departmentDTO?.Name} not found.");
                     return false;
                 }
                 else
                 {
-                    UserDTO? user = _context.Users.FirstOrDefault(u => u.Email == department.ManagerEmail);
-                    if(user == null || user.Role != "manager")
+                    UserDTO? user = await _context.Users.FirstOrDefaultAsync(u => u.Email == department.ManagerEmail);
+                    if (user == null || user.Role != "manager")
                     {
-                        Console.WriteLine($"Employee with Name {departmentDTO?.ManagerEmail} not found or not Manager.");
-                        _logger.LogError($"Employee with Name {departmentDTO?.ManagerEmail} not found or not Manager.");
+                        _logger.LogError($"[{nameof(DDepartments)}] - [{nameof(UpdateDepartment)}] - Employee with Name {departmentDTO?.ManagerEmail} not found or not Manager.");
                         return false;
                     }
                     else
@@ -114,7 +111,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var departmentsInfo = (from emp in _context.Employees
+                var departmentsInfo = await (from emp in _context.Employees
                                        join department in _context.Departments
                                        on emp.DepartmentName equals department.Name
                                        group emp by department.Name into DG
@@ -123,7 +120,7 @@ namespace Employee_Management_System.DAL
                                           { "departmentName", DG.Key },
                                           { "numberOfEmployees", DG.Count().ToString() }
                                        }
-                                       ).ToList();
+                                       ).ToListAsync();
                 _logger.LogInformation($"[{nameof(DDepartments)}] - [{nameof(DepartmentsStatistics)}] - Retrived departments statistics");
                 return departmentsInfo;
             }

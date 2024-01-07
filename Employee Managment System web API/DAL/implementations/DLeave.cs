@@ -1,5 +1,5 @@
 ﻿using Employee_Management_System.Model;
-using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace Employee_Management_System.DAL
@@ -20,8 +20,7 @@ namespace Employee_Management_System.DAL
             {
                 if (leave == null)
                 {
-                    Console.WriteLine("Bad Request should has a leave to add it");
-                    _logger.LogError("Bad Request should has a leave to add it");
+                    _logger.LogError($"[{nameof(DLeave)}] - [{nameof(AddLeave)}] - Bad Request should has a leave to add it");
                     return false;
                 }
                 else
@@ -35,8 +34,8 @@ namespace Employee_Management_System.DAL
                         EndDate = leave.EndDate,
                         Status = Enum.Parse<LeaveStatus>(leave.Status),
                     };
-                    _context.Leaves.Add(leaveDTO);
-                    _context.SaveChanges();
+                    await _context.Leaves.AddAsync(leaveDTO);
+                    await _context.SaveChangesAsync();
                     _logger.LogInformation($"[{nameof(DLeave)}] - [{nameof(AddLeave)}] - Added new Leave to employee: {leaveDTO.EmployeeEmail}");
                     return true;
                 }
@@ -56,11 +55,10 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                LeaveDTO? leaveDTO = _context.Leaves.FirstOrDefault(l => l.Id == leave.Id);
+                LeaveDTO? leaveDTO = await _context.Leaves.FirstOrDefaultAsync(l => l.Id == leave.Id);
                 if (leaveDTO == null)
                 {
-                    Console.WriteLine($"leave with Id {leave?.Id} not found.");
-                    _logger.LogError($"leave with Id {leave?.Id} not found.");
+                    _logger.LogError($"[{nameof(DLeave)}] - [{nameof(UpdateLeave)}] - leave with Id {leave?.Id} not found.");
                     return false;
                 }
                 else
@@ -70,7 +68,7 @@ namespace Employee_Management_System.DAL
                     leaveDTO.EndDate = leave.EndDate;
                     leaveDTO.Description = leave.Description;
                     leaveDTO.Status = Enum.Parse<LeaveStatus>(leave.Status);
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                     _logger.LogInformation($"[{nameof(DLeave)}] - [{nameof(UpdateLeave)}] - Leave with Id {leave?.Id} updated.");
                     return true;
                 }
@@ -86,24 +84,23 @@ namespace Employee_Management_System.DAL
                 throw ex;
             }
         }
-        public Leave? GetLeave(Guid id)
+        public async Task<Leave>? GetLeave(Guid id)
         {
             try
             {
-                var leaveDTO = _context.Leaves.FirstOrDefault(l => l.Id == id);
+                var leaveDTO = await _context.Leaves.FirstOrDefaultAsync(l => l.Id == id);
                 if (leaveDTO == null)
                 {
-                    Console.WriteLine($"leave with id = {id} not found");
-                    _logger.LogInformation($"leave with id = {id} not found");
+                    _logger.LogInformation($"[{nameof(DLeave)}] - [{nameof(GetLeave)}] - Leave with id = {id} not found");
                     return null;
                 }
                 var leave = new Leave
                 {
-                    Id= leaveDTO.Id,
-                    Description= leaveDTO.Description,
-                    EmployeeEmail= leaveDTO.EmployeeEmail,
-                    StartDate= leaveDTO.StartDate,
-                    EndDate= leaveDTO.EndDate,
+                    Id = leaveDTO.Id,
+                    Description = leaveDTO.Description,
+                    EmployeeEmail = leaveDTO.EmployeeEmail,
+                    StartDate = leaveDTO.StartDate,
+                    EndDate = leaveDTO.EndDate,
                     Status = leaveDTO.Status.ToString()
                 };
                 _logger.LogInformation($"[{nameof(DLeave)}] - [{nameof(GetLeave)}] - Retrieved leave id = {id}");
@@ -119,7 +116,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var leaves = _context.Leaves
+                var leaves = await _context.Leaves
                     .Where(l => l.EmployeeEmail == employeeEmail)
                     .Select(l => new Leave
                     {
@@ -130,7 +127,7 @@ namespace Employee_Management_System.DAL
                         EndDate = l.EndDate,
                         Status = l.Status.ToString(),
                     })
-                    .ToList();
+                    .ToListAsync();
 
                 _logger.LogInformation($"[{nameof(DLeave)}] - [{nameof(GetLeaves)}] - Retrieved leaves for employee with email {employeeEmail}");
                 return leaves;
@@ -145,7 +142,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var leaves = _context.Leaves
+                var leaves = await _context.Leaves
                     .Select(l => new Leave
                     {
                         Id = l.Id,
@@ -154,8 +151,8 @@ namespace Employee_Management_System.DAL
                         StartDate = l.StartDate,
                         EndDate = l.EndDate,
                         Status = l.Status.ToString(),
-                    })?.OrderBy(l => l.StartDate)?
-                    .ToList();
+                    }).OrderBy(l => l.StartDate)
+                    .ToListAsync();
 
                 _logger.LogInformation($"[{nameof(DLeave)}] - [{nameof(GetLeaves)}] - Retrieved all leaves");
                 return leaves;
@@ -170,7 +167,7 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var leaves = _context.Leaves.
+                var leaves = await _context.Leaves.
                     Where(l => l.Status == LeaveStatus.Approved)
                    .Select(l => new Leave
                    {
@@ -180,7 +177,7 @@ namespace Employee_Management_System.DAL
                        StartDate = l.StartDate,
                        EndDate = l.EndDate,
                    })
-                   .ToList();
+                   .ToListAsync();
                 _logger.LogInformation($"[{nameof(DLeave)}] - [{nameof(GetApprovedLeaves)}] - Retrived approved leaves");
                 return leaves;
             }
@@ -194,18 +191,18 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var leaves = (from emp in _context.Employees
-                                 join leave in _context.Leaves on emp.UserEmail equals leave.EmployeeEmail
-                                 where (leave.Status == LeaveStatus.Pending && emp.DepartmentName == departmentName)
-                                 select new Leave
-                                 {
-                                     Id = leave.Id,
-                                     EmployeeEmail = leave.EmployeeEmail,
-                                     Description = leave.Description,
-                                     StartDate = leave.StartDate,
-                                     EndDate = leave.EndDate,
-                                     Status = leave.Status.ToString(),
-                                 }).ToList();
+                var leaves = await (from emp in _context.Employees
+                                    join leave in _context.Leaves on emp.UserEmail equals leave.EmployeeEmail
+                                    where (leave.Status == LeaveStatus.Pending && emp.DepartmentName == departmentName)
+                                    select new Leave
+                                    {
+                                        Id = leave.Id,
+                                        EmployeeEmail = leave.EmployeeEmail,
+                                        Description = leave.Description,
+                                        StartDate = leave.StartDate,
+                                        EndDate = leave.EndDate,
+                                        Status = leave.Status.ToString(),
+                                    }).ToListAsync();
 
                 _logger.LogInformation($"[{nameof(DLeave)}] - [{nameof(GetPendingLeaves)}] - Retrieved leaves that status pending for department {departmentName}");
                 return leaves;
@@ -220,18 +217,18 @@ namespace Employee_Management_System.DAL
         {
             try
             {
-                var leaves = (from emp in _context.Employees
-                                 join leave in _context.Leaves on emp.UserEmail equals leave.EmployeeEmail
-                                 where (emp.DepartmentName == departmentName)
-                                 select new Leave
-                                 {
-                                     Id = leave.Id,
-                                     EmployeeEmail = leave.EmployeeEmail,
-                                     Description = leave.Description,
-                                     StartDate = leave.StartDate,
-                                     EndDate = leave.EndDate,
-                                     Status = leave.Status.ToString(),
-                                 }).ToList();
+                var leaves = await (from emp in _context.Employees
+                                    join leave in _context.Leaves on emp.UserEmail equals leave.EmployeeEmail
+                                    where (emp.DepartmentName == departmentName)
+                                    select new Leave
+                                    {
+                                        Id = leave.Id,
+                                        EmployeeEmail = leave.EmployeeEmail,
+                                        Description = leave.Description,
+                                        StartDate = leave.StartDate,
+                                        EndDate = leave.EndDate,
+                                        Status = leave.Status.ToString(),
+                                    }).ToListAsync();
 
                 _logger.LogInformation($"[{nameof(DLeave)}] - [{nameof(GetLeavesForDepartment)}] - Retrieved leaves for department {departmentName}");
                 return leaves;
