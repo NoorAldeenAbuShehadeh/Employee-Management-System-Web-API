@@ -2,6 +2,7 @@
 using Employee_Management_System.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MySqlX.XDevAPI.Common;
 
 namespace Employee_Managment_System_web_API.Controllers
 {
@@ -30,8 +31,8 @@ namespace Employee_Managment_System_web_API.Controllers
                 var user = HttpContext.Items["User"] as User;
                 bool added = await _attendanceServices.AddAttendance(attendance, user);
                 if (added)
-                    return StatusCode(201, new { Message = "attendance added successfully" });
-                return BadRequest(new { Message = "There is an issue with the data" });
+                    return Ok();
+                return BadRequest();
             }
             catch (Exception ex)
             {
@@ -53,6 +54,7 @@ namespace Employee_Managment_System_web_API.Controllers
                 var user = HttpContext.Items["User"] as User;
                 var (result, authorized) = await _attendanceServices.GetAttendancesForDepartment(DepartmentName, startDate, user);
                 if (!authorized) return StatusCode(403, new { Message = "Access denied. You don't has permission." });
+                if(result == null) return NotFound();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -68,7 +70,9 @@ namespace Employee_Managment_System_web_API.Controllers
         {
             try
             {
+                if(startDate == null) return BadRequest();
                 var attendances = await _attendanceServices.AttendancesReport(startDate);
+                if (attendances == null) return NotFound();
                 return Ok(attendances);
             }
             catch (Exception ex)
@@ -88,9 +92,10 @@ namespace Employee_Managment_System_web_API.Controllers
                 var (attendances, authorized) = await _attendanceServices.GetAttendanceForEmployee(user, employeeEmail, startDate);
                 if (authorized)
                 {
+                    if (attendances == null) return NotFound();
                     return Ok(attendances);
                 }
-                return Unauthorized();
+                else return Unauthorized();
             }
             catch (Exception ex)
             {

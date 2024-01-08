@@ -36,7 +36,7 @@ namespace Employee_Managment_System_web_API.Controllers
                 {
                     return Ok(new { token = token });
                 }
-                return Unauthorized("Wrong email and/or password");
+                return Unauthorized();
             }
             catch (Exception ex)
             {

@@ -42,7 +42,7 @@ namespace Employee_Managment_System_web_API.Controllers
             {
                 var user = HttpContext.Items["User"] as User;
                 var result = await _salaryServices.GetEmployeeSalaryDetails(user, employeeEmail);
-                if (result == null) return NotFound();
+                if (result == null) return BadRequest();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -60,7 +60,7 @@ namespace Employee_Managment_System_web_API.Controllers
             {
                 if (salary == null) return BadRequest();
                 bool salaryUpdated = await _salaryServices.UpdateSalary(salary);
-                if (salaryUpdated) return Ok("updated successfully");
+                if (salaryUpdated) return Ok();
                 return BadRequest();
             }
             catch (Exception ex)

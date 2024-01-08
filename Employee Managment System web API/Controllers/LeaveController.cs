@@ -27,8 +27,8 @@ namespace Employee_Managment_System_web_API.Controllers
                 leave.Status = LeaveStatus.Pending.ToString();
                 bool leaveAdded = await _leaveServices.AddLeave(leave);
                 if (leaveAdded)
-                    return StatusCode(201, new { Message = "leave added successfully" });
-                return BadRequest(new { Message = "There is an issue with the data" });
+                    return Ok();
+                return BadRequest();
             }
             catch (Exception ex)
             {
@@ -80,6 +80,7 @@ namespace Employee_Managment_System_web_API.Controllers
                 var user = HttpContext.Items["User"] as User;
                 var (leaves, authorized) = await _leaveServices.GetDepartmentLeaves(user, departmentName);
                 if (!authorized) return Unauthorized();
+                if (leaves == null) return NotFound();
                 return Ok(leaves);
             }
             catch (Exception ex)
@@ -119,6 +120,7 @@ namespace Employee_Managment_System_web_API.Controllers
                 var (leaves, authorized) = await _leaveServices.GetLeavesForEmployee(user, employeeEmail);
                 if (authorized)
                 {
+                    if(leaves == null) return BadRequest();
                     return Ok(leaves);
                 }
                 return Unauthorized();

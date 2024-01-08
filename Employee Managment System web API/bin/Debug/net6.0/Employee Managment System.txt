@@ -1241,3 +1241,9 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'format')
 2024-01-04 12:51:22,565 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - [DEmployees] - [UpdateEmployee] - Employee with email samaerQadi@gmail.com updated.
 2024-01-04 12:52:21,760 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DEmployees - [DEmployees] - [GetEmployee] - Get data for employee
 2024-01-04 12:52:21,788 [.NET ThreadPool Worker] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [GetUser] - Get data for user
+2024-01-08 16:29:18,572 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7221
+2024-01-08 16:29:18,585 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5260
+2024-01-08 16:29:18,591 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-01-08 16:29:18,593 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-01-08 16:29:18,594 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\NoorAldeen\Desktop\University\5Year\1\Training\tasks\task4\Employee Managment System web API\Employee Managment System web API\
+2024-01-08 16:29:24,615 [16] INFO  Employee_Management_System.DAL.DUsers - [DUsers] - [LogIn] - User with email samaerQadi@gmail.com logged in.

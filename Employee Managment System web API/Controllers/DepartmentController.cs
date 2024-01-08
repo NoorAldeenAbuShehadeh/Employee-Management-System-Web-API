@@ -26,9 +26,9 @@ namespace Employee_Managment_System_web_API.Controllers
                 department.ManagerEmail = null;
                 if (await _departmentServices.AddDepartment(department))
                 {
-                    return StatusCode(201, new { Message = "department created successfully." });
+                    return Ok();
                 }
-                return BadRequest(new { Message = "There is an issue with the data" });
+                return BadRequest();
             }
             catch (Exception ex)
             {
@@ -61,6 +61,7 @@ namespace Employee_Managment_System_web_API.Controllers
             try
             {
                 var statistics = await _departmentServices.GetDepartmentSatatistics();
+                if(statistics == null) return NotFound();
                 return Ok(statistics);
             }
             catch (Exception ex)

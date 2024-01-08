@@ -82,6 +82,7 @@ namespace Employee_Managment_System_web_API.Controllers
             try
             { 
                 var employees = await _employeeServices.FilterEmployeesBySalary(minSalary);
+                if (employees == null) return NotFound();
                 return Ok(employees);
             }
             catch (Exception ex)
@@ -98,6 +99,7 @@ namespace Employee_Managment_System_web_API.Controllers
             try
             {
                 var employees = await _employeeServices.SearchForEmployeesByCity(city);
+                if (employees == null) return NotFound();
                 return Ok(employees);
             }
             catch (Exception ex)
@@ -133,6 +135,7 @@ namespace Employee_Managment_System_web_API.Controllers
             {
                 var user = HttpContext.Items["User"] as User;
                 var (e, u) = await _employeeServices.GetEmployee(user.Email);
+                if (e == null || u==null) return NotFound();
                 var userInfo = new
                 {
                     u.Email,

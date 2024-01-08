@@ -144,7 +144,7 @@ namespace Employee_Management_System.Services
         {
             try
             {
-                Leave? l = _dLeave.GetLeave(leave.Id);
+                Leave? l = await _dLeave.GetLeave(leave.Id);
                 if (l != null)
                 {
                     l.Status = leave.Status;
